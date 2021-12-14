@@ -36,3 +36,110 @@ td, th, tr {
 th {
 	background-color: #aaa;
 }
+
+#slider {
+   overflow: hidden;
+   position: relative;
+   width: 100%;
+   height: 300px;
+	 margin-top: 20px;
+}
+
+a.link {
+   padding: 10px 25px;
+   background-color: #4CA74C;
+   color: #fff;
+   border-radius: 25px;
+   text-decoration: none;
+}
+
+.singleSlide {
+   background-size: cover;
+   height: 300px;
+   position: absolute;
+	 padding: 20px;
+   left: 100%;
+   width: 100%;
+   top: 0;overflow: hidden;
+}
+
+.singleSlide h2 {
+	 text-shadow: 0 0 5px #fff;
+}
+
+@-webkit-keyframes slideIn {
+   100% { left: 0; }
+}
+
+@keyframes slideIn {
+   100% { left: 0; }
+}
+
+.slideInRight {
+   left: -100%;
+   -webkit-animation: slideIn 1s forwards;
+   animation: slideIn 1s forwards;
+}
+
+.slideInLeft {
+   left: 100%;
+   -webkit-animation: slideIn 1s forwards;
+   animation: slideIn 1s forwards;
+}
+
+@-webkit-keyframes slideOutLeft {
+   100% { left: -100%; }
+}
+
+@keyframes slideOutLeft {
+   100% { left: -100%; }
+}
+
+.slideOutLeft {
+   -webkit-animation: slideOutLeft 1s forwards;
+   animation: slideOutLeft 1s forwards;
+}
+
+@-webkit-keyframes slideOutRight {
+   100% { left: 100%; }
+}
+
+@keyframes slideOutRight {
+   100% { left: 100%; }
+}
+
+.slideOutRight {
+   -webkit-animation: slideOutRight 1s forwards;
+   animation: slideOutRight 1s forwards;
+}
+
+.btn-container, #pagination {
+	display: flex;
+	justify-content: center;
+}
+
+.slider-container button {
+	background: rgb(3, 146, 134);
+	border: none;
+	font-size: 20px;
+	padding: 5px 15px;
+	border-radius: 10px;
+	margin-top: 20px;
+	cursor: pointer;
+	transition: transform 0.2s;
+	color: #fff;
+}
+
+.slider-container button:hover {
+	transform: scale(0.95);
+}
+
+.slider-container button + button {
+	margin-left: 15px;
+}
+
+.slider-wrapper {
+	transition: all 0.5s;
+	overflow: hidden;
+	max-height: 0;
+}
