@@ -1,0 +1,38 @@
+.header, .footer {
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+  	width: 32px;
+  	height: 32px;
+  	float: left;
+	margin-left: 10px;
+}
+
+.active-page {
+	color:indigo;
+	font-weight: bold;
+}
+
+main article {
+	display: flex;
+	flex-direction: column;
+}
+
+#contact-form {
+	display: flex;
+	flex-direction: column;
+}
+
+#contact-form > * + * {
+	margin-top: 10px;
+}
+
+td, th, tr {
+	height: 25px;
+}
+
+th {
+	background-color: #aaa;
+}

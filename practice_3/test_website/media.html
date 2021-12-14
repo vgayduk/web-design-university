@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>3 Column Layout</title>
+	<link rel="stylesheet" href="assets/css/layout.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<p>Header...</p>
+		<img class="logo" src="./assets/img/logo.png">
+	</header>
+	<div class="container">
+		<main class="center column">
+			<article>
+				<h1>Media</h1>
+				<p>Tears don't fall</p>
+				<audio controls>
+					<source src="./public/audios/tears_dont_fall.mp3" type="audio/mp4">
+					Your browser does not support the audio element.
+				</audio>
+				<video width="320" height="240" controls>
+					<source src="./public/videos/video.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+				<embed width="420" height="315" src="https://www.youtube.com/watch?v=CD-E-LDc384"></embed>
+			</article>
+		</main>
+		<nav class="left column">
+			<h3>Left heading</h3>
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+				<li><a href="./about.html">About</a></li>
+				<li><a href="./slider.html">Slider</a></li>
+				<li><a class="active-page" href="./media.html">Media</a></li>
+				<li><a href="./table.html">Table</a></li>
+			</ul>
+		</nav>
+		<div class="right column">
+			<h3>Right heading</h3>
+			<p></p>
+		</div>
+		<div class="push"></div>
+	</div>
+	<div class="footer-wrapper">
+		<footer class="footer">
+			<p>Footer...</p>
+			<img class="logo" src="./assets/img/logo.png">
+		</footer>
+	</div>
+</body>
+
+</html>
